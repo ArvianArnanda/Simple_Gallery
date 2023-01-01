@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Frontend 1 : Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <div class="flex items-center bg-slate-200">
+            <div class="px-10 py-2">
+                <a href="#" class="font-bold text-lg block"><img src="./assets/pp.png" alt=""
+                        class="rounded-full w-12"></a>
+            </div>
+            <nav>
+                <ul class="block lg:flex">
+                    <li>
+                        <a href="#" class="text-base text-dark py-2 mx-10 flex hover:text-slate-500">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav End -->
+
+    <!-- Content -->
+    <div class="container">
+        <h2 class="mt-24 my-10 font-bold text-center text-3xl text-slate-700">Welcome To My Gallery</h2>
+        <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Animal')">
+                <img src="./assets/Animal.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 1</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Cloud')">
+                <img src="./assets/Cloud.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 2</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Mountain')">
+                <img src="./assets/mountain.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 3</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Sea')">
+                <img src="./assets/sea.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 4</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Sunflower')">
+                <img src="./assets/sunflower.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 5</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Field')">
+                <img src="./assets/field.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 6</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Tree')">
+                <img src="./assets/tree.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 7</h2>
+            </div>
+            <div class="shadow-lg mb-10 sm:mb-0 sm:w-64 md:w-80 lg:w-72 relative hover:scale-110 transition"
+                onclick="showModal('Waterfall')">
+                <img src="./assets/waterfall.jpg" alt="" class="w-full">
+                <h2
+                    class="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#F1F1F1] w-full py-4 rounded-tl-full text-center">
+                    Image Title 8</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Content End -->
+
+    <div
+        class="modal h-screen w-full fixed top-0 left-0 flex justify-center items-center bg-black bg-opacity-25 hidden">
+        <a class="fixed top-2 right-6 text-black text-4xl font-bold hover:text-opacity-25" href="#"
+            onclick="closeModal()">&times;</a>
+        <div class="justify-center max-w-5xl relative">
+            <img class="modal-image w-full h-auto" alt="">
+            <div class="absolute bottom-0 p-4 text-center bg-white rounded-tl-3xl w-full">
+                <h5 class="modal-title text-gray-800 text-2xl font-medium mb-3">test</h5>
+                <p class="modal-text text-gray-600 text-base mb-3">test</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
